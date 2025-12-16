@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ebb4f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background {
+  width: 90%;
+  max-width: 1200px;
+  height: 550px;
+  border-radius: 25px;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 20px 40px rgb(226, 121, 226);
+  position: relative;
+}
+
+
+.background-arts{
+  width: 90%;
+  max-width: 1200px;
+  height: 550px;
+  border-radius: 25px;
+  background-image: url("arts.jpg");
+  /* background-size: cover; */
+  background-position: center;
+  box-shadow: 0px 20px 40px rgba(146, 2, 91, 0.25);
+  position: relative;
+}
+
+.background-contact {
+  width: 90%;
+  max-width: 1200px;
+  height: 550px;
+  border-radius: 25px;
+  background-image: url("contact.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 20px 40px rgba(146, 2, 91, 0.25);
+  position: relative;
+  
+}
+.backgroundtext-about{
+  margin-left: 25%;
+   width: 50%; 
+   position: absolute; 
+   text-align: justify; 
+   align-items: center;
+    color: #fff;
+    top: 20%;
+    
+}
+
+
+.background-home {
+  width: 90%;
+  max-width: 1200px;
+  height: 550px;
+  border-radius: 25px;
+  background-image: url("home.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 20px 40px rgba(201, 5, 168, 0.25);
+  position: relative;
+  background-attachment: fixed;
+  display: flex;}
+
+  .background-about {
+  width: 90%;
+  max-width: 1200px;
+  height: 550px;
+  border-radius: 25px;
+  background-image: url("about.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 20px 40px rgba(183, 38, 212, 0.25);
+  position: relative;
+  background-attachment: fixed;
+  display: flex;}
+
+.fixed-bg-container {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("Background-about-admin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  
+    overflow: hidden;
+}
+
+
+
+.contact {
+    position: absolute;
+    top: 120px;         
+    left: 100px;
+    right: 100px;
+    bottom: 70px;
+    overflow-y: auto;   
+    padding-right: 20px; 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(209, 92, 199, 0.3);
+    background: rgba(236, 45, 195, 0.8);
+    color: #fff;
+    align-items: center;
+    padding: 50px;
+}
+
+.home {
+    position: absolute;
+    top: 120px;         
+    left: 100px;
+    right: 100px;
+    bottom: 70px;
+    overflow-y: auto;   
+    padding-right: 20px; 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(209, 92, 199, 0.3);
+    background: rgba(236, 45, 195, 0.8);
+    color: #fff;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.contactText {
+    padding: 150px;
+    margin-left: 100px;
+    font-family: 'Verdana', sans-serif;
+    color: #d37810;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+
+
+.top-nav {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 50px;        
+  width: auto;
+  object-fit: contain;
+  margin: 0;        /* FIXED */
+}
+
+.logo-text {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.menu li a:hover {
+  opacity: 1;
+}
+
+.backgroundtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#fff;
+    width: 100%;
+}
+
+
+
+
+.backgroundtext h1 {
+    font-size: 70px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  color: #da4646;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit;           
+    display: inline-block;    
+}
+
+.logo-link:hover {
+    opacity: 0.8;             
+}
