@@ -1,0 +1,137 @@
+.grid-container {
+    display: grid;
+    border: 10px solid rgb(9, 200, 50);
+    grid-template-columns: repeat(2, 1fr) ;
+    gap: 15px;
+    /* grid-template-rows: auto auto auto; */
+    gap: 10px;
+      object-fit: cover;
+      border-radius: 10px;
+      width: 95%;
+      height: auto;
+      overflow: hidden;
+      color: blueviolet;
+      scrollbar-width: none;
+      align-items: center;
+      margin-left :25px;
+    box-shadow: 2px 2px 2px #373843;
+
+   
+}
+
+
+.grid-container image{
+    padding-inline-start: 30%;
+    align-items: center;
+    padding: center;
+    width: 100%;
+    height: auto;
+}
+.item1 img{
+    margin-left: 10px;
+    height: 400px;
+    width: 900px;
+}
+.item2 img{
+    margin-left: 10px;
+    height: 400px;
+    width: 900px;
+}
+
+.item3 img{
+    margin-left: 10px;
+    height: 500px;
+    width: 900px;
+}
+.item4 img{
+    margin-left: 10px;
+    height: 500px;
+    width: 900px;
+}
+.item5 img{
+    margin-left: 200px;
+    height: 900px;
+    width: 500px;
+}
+.item6 img{
+    margin-left: 200px;
+    position: relative;
+    height: 900px;
+    width: 500px;
+}
+.item7 img{
+    margin-left: 100px;
+    /* position: relative; */
+    height: 700px;
+    width: 700px;
+}
+.item8 img{
+    margin-left: 100px;
+    /* position: relative; */
+    height: 700px;
+    width: 700px;
+}
+.item9 img{
+    margin-left: 100px;
+    /* position: relative; */
+    height: 700px;
+    width: 700px;
+}
+.item10 img{
+    margin-left: 100px;
+    /* position: relative; */
+    height: 700px;
+    width: 700px;
+}
+.item11 img{
+    margin-left: 100px;
+    /* position: relative; */
+    height: 700px;
+    width: 700px;
+}
+.item12 img{
+    margin-left: 100px;
+    /* position: relative; */
+    height: 700px;
+    width: 700px;
+}
+
+.item13 img{
+    margin-left: 100px;
+    /* position: relative; */
+    height: 700px;
+    width: 700px;
+}
+.item14 img{
+    margin-left: 100px;
+    /* position: relative; */
+    height: 700px;
+    width: 700px;
+}
+.header{
+    grid-column: 1 / span 2;
+    background-color: rgb(221, 123, 234);
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    border-block-start-style: dotted;
+    height: 50px;
+    color: #fff;
+    box-shadow: 2px 2px 2px #373843;
+
+}
+
+.footer{
+    grid-column: 1 / span 2;
+    background-color: rgb(221, 123, 234);
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    border-block-start-style: double;
+    height: 50px;
+    color: #fff;
+    box-shadow: 2px 2px 2px #373843;
+
+}
+
+
