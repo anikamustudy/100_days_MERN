@@ -1,0 +1,173 @@
+body{
+    width: 90%;
+    margin-left: 5%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #a9cbe7;
+    padding: 5px;
+
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: aquamarine;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-variant: small-caps;
+    font-size: 30px;
+    font-weight: bold;
+    color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.top-nav {
+    position: relative;
+    justify-content: flex-end;
+    display: flex;
+    z-index: 100;
+    width: 100%;
+    background-color: #2196F3;
+
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+
+}
+
+.menu li a {
+    color: purple;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.menu li a:hover {
+    color: green;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.sub-header {
+    background-color: antiquewhite;
+    height: 20px;
+    color: purple
+
+}
+
+.sub-header a {
+    color: purple;
+}
+
+
+.menu-toggle{
+    display: none;
+}
+
+@media (min-width: 767px) and (max-width : 1023px)
+ {
+
+    .grid-container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #2196F3;
+        padding: 5px;
+
+        /* position: absolute; */
+    }
+}
+ 
+
+    .menu {
+        list-style-type: none;
+        display: flex;
+        gap: 18px;
+        padding: 20px;
+
+
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+
+
+ @media (max-width : 767px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        background-color: #2196F3;
+        padding: 2px;
+
+    }
+    .top-nav{
+        justify-content: right;
+        position: relative;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: none;
+        flex-direction: column;
+        width: 17%;
+        top:50px;
+        right: 0;
+        height: auto;
+        background-color: #14aec2;
+        text-align: left;
+        padding: 10px;
+        justify-content:right ;
+        z-index: 999;
+        position: absolute;
+        padding: 10px;
+    }
+  
+    .menu-toggle {
+    justify-content: right;
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 15px;
+    color: purple;
+    justify-content: flex-end;
+
+}
+.menu-active {
+    display: flex;
+    justify-content: left;
+    
+
+}
+
+
+
+
+
+.menu li a:active {
+    color: green;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+}
+
