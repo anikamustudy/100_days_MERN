@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background: lightgoldenrodyellow;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+    width: 90%;
+
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: purple;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 10px gray;
+
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    color: purple;
+    text-shadow: 1px 1px 2px gray;
+
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+    height: 2.75vh;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input:focus {
+    outline: none;
+    border-color: purple;
+}
+
+small {
+    color: red;
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    visibility: hidden;
+
+}
+
+.form-group.success input {
+    border-color: green;
+}
+
+.form-group.error input {
+    border-color: red;
+}
+
+.form-group.success small {
+    color: green;
+    visibility: visible;
+}
+
+.form-group.error small {
+    visibility: visible;
+}
+
+button {
+    width: 94%;
+    padding: 10px;
+    border: none;
+    background: purple;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5px;
+}
+
+button:hover {
+    background: blueviolet;
+}
+
+/* anika sapkota */
