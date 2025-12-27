@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-Up form</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <div class="signup-container">
+
+        <h1>Sign Up</h1>
+
+        <div class="signup-content">
+
+            <!-- LEFT SIDE -->
+            <div class="social-signup">
+                <button class="btn facebook">Sign up with Facebook</button>
+                <button class="btn twitter">Sign up with Twitter</button>
+                <button class="btn google">Sign up with Google</button>
+            </div>
+
+            <!-- OR DIVIDER -->
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="form-signup">
+                <form id="signupForm" class="form-signup">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="Password">
+                    <button type="submit" class="btn signup">Sign Up</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-text">
+            <a href="login.html">Already have an account? Login here</a>
+            <p>By registering, you agree to our <strong>Terms of Service</strong></p>
+        </div>
+
+    </div>
+
+    <script>
+        const form = document.getElementById('signupForm');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            validateInputs();
+        });
+
+        function validateInputs() {
+            // validation
+            if (email.value.trim() === '' || password.value.trim() === '') {
+                alert('Input field/s can not be empty');
+            }
+            else if (!isValidEmail(email.value)) {
+                alert('Email is not valid');
+            }
+            else if (!isStrongPassword(password.value)) {
+                alert('Password must be at least 6 characters, include uppercase, lowercase, number and special char');
+            }
+            else {
+                showSuccessMessage();
+            }
+        }
+        function showSuccessMessage() {
+            document.body.innerHTML = `
+            <div style="
+                height:100vh;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+                font-family:Arial;
+                text-align:center;
+                width: 400px;
+                height: 200px;
+                border-radius: 10px;
+                // background-color: #b4e8fa;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+            ">
+                <h2 style="color:green;">Registered Successfully✔️</h2>
+                <p>Your account has been created.</p>
+                <button 
+                    onclick="redirectToLogin()" 
+                    style="
+                        padding:10px 20px;
+                        background:#5341fb;
+                        color:white;
+                        border:none;
+                        border-radius:5px;
+                        cursor:pointer;
+                        font-size:16px;
+                    ">
+                    Click here to Login
+                </button>
+            </div>
+        `;
+        }
+
+        function redirectToLogin() {
+            window.location.href = "login.html"; // change path if needed
+        }
+
+
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        function isStrongPassword(password) {
+            return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password);
+        }
+
+    </script>
+
+</body>
+
+</html>
